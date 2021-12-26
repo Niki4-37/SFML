@@ -1,12 +1,12 @@
-#ifndef BULLET_H
-#define BULLET_H
+#ifndef BALL_H
+#define BALL_H
 
 #include <iostream>
 #include <cmath> //in this case - trigonometry
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 
-class Bullet
+class Ball
 {
 private:
 //Variables
@@ -26,8 +26,8 @@ bool boundTouched;
    
 public:
 //Constructors and Destructors
-    Bullet(const sf::Vector2f start_position, const float speed);
-    virtual ~Bullet();
+    Ball(const sf::Vector2f start_position, const float speed);
+    virtual ~Ball();
 
 //Accessors
     const sf::FloatRect getBounds() const;

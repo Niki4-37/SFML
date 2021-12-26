@@ -1,4 +1,4 @@
-# Install script for directory: /home/vladimir/C++ projects/SFML_project
+# Install script for directory: /run/media/vladimir/Новый том/C++/SFML-Jumping-balls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vladimir/C++ projects/SFML_project/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

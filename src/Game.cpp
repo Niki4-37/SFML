@@ -10,8 +10,6 @@ void Game::initVariables()
     this->startPosition.x = 0.f;
     this->startPosition.y = 540.f;
 
-//    this->angle = 0.f;
-
     this->speed = 400.f;
 
     this->mouseHeld = false;
@@ -28,7 +26,7 @@ void Game::initHorizonLine()
 {
     this->line.setPosition(this->startPosition);
     this->line.setSize(sf::Vector2f(this->window->getSize().x, 1.f));
-    this->line.setFillColor(sf::Color::Red);
+    this->line.setFillColor(sf::Color::White);
 }
 
 void Game::initDirection()
@@ -42,9 +40,9 @@ void Game::initDirection()
     this->direction.append(this->point);
 }
 
-void Game::initBullet()
+void Game::initBall()
 {
-    this->bullets.push_back(new Bullet(this->startPosition, this->speed));  //, this->angle
+    this->balls.push_back(new Ball(this->startPosition, this->speed));  //, this->angle
 }
 
 //it should be a vector
@@ -63,7 +61,7 @@ Game::Game()
     this->initWindow();
     this->initHorizonLine();
     this->initDirection();
-    this->initBullet();
+    this->initBall();
     this->initTile();
 
 }
@@ -72,8 +70,8 @@ Game::~Game()
 {
     delete this->window;
     
-    for (auto &bullet : this->bullets)
-        delete bullet;
+    for (auto &ball : this->balls)
+        delete ball;
 
     delete this->tile;
 
@@ -116,10 +114,10 @@ void Game::updateDirection()
 {
     this->direction.clear();
     this->point.position = this->startPosition;
-    this->point.color = sf::Color::White;
+    this->point.color = sf::Color::Red;
     this->direction.append(this->point);
     this->point.position = this->mousePosVeiw;
-    this->point.color = sf::Color::White;
+    this->point.color = sf::Color::Green;
     this->direction.append(this->point);
 }
 
@@ -141,41 +139,42 @@ void Game::updateInput()
 
             std::cout << "Game::updateInput angle: " << this->getAngle(this->mousePosVeiw) * 180 / 3.14 << "\n";    
         
-            for (auto &bullet : this->bullets)
+            for (auto &ball : this->balls)
             {
-                if (bullet->atStatrPosition())
-                    bullet->setAngle(this->getAngle(this->mousePosVeiw));
-                    bullet->makeFire();
+                if (ball->atStatrPosition())
+                    ball->setAngle(this->getAngle(this->mousePosVeiw));
+                    ball->makeFire();
             }
         }
     }
     else
         this->mouseHeld = false;
-    
-    ////Make own update function
-    if (this->bullets.back()->getPosition().x >= 
-        this->startPosition.x + 
-        this->bullets.back()->getBounds().width ||
-        this->bullets.back()->getPosition().y >= 
-        this->startPosition.y + 
-        this->bullets.back()->getBounds().height)
-    {
-        this->bullets.push_back(new Bullet(this->startPosition, this->speed));  //, this->angle
-    }
 }
 
 void Game::updateCollision()
 {
-    for (auto &bullet : this->bullets)
-        bullet->checkWindowCollision(this->window);
+    for (auto &ball : this->balls)
+        ball->checkWindowCollision(this->window);
 }
 
 void Game::updateQuantity()
 {
-    if (this->bullets.size() > 11)
+    //checking start position
+    if (this->balls.back()->getPosition().x >= 
+        this->startPosition.x + 
+        this->balls.back()->getBounds().width ||
+        this->balls.back()->getPosition().y >= 
+        this->startPosition.y + 
+        this->balls.back()->getBounds().height)
     {
-        delete this->bullets.at(0);
-        this->bullets.erase(this->bullets.begin());
+        //add new ball if it's empty 
+        this->balls.push_back(new Ball(this->startPosition, this->speed));  //, this->angle
+    }
+    //check quantity
+    if (this->balls.size() > 11)
+    {
+        delete this->balls.at(0);
+        this->balls.erase(this->balls.begin());
     }
 }
 
@@ -187,9 +186,9 @@ void Game::update()
     this->updateTimer();
     this->updateInput();
     this->updateCollision();
-    for (auto &bullet : this->bullets)
-        if (bullet->checkFire())
-            bullet->update(this->dt);
+    for (auto &ball : this->balls)
+        if (ball->checkFire())
+            ball->update(this->dt);
     this->updateQuantity();
 
 
@@ -205,8 +204,8 @@ void Game::render()
 
     this->window->draw(this->direction);
     
-    for (auto &bullet : this->bullets)
-        bullet->render(this->window);
+    for (auto &ball : this->balls)
+        ball->render(this->window);
 
     this->window->display();
 }

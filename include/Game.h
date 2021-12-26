@@ -4,10 +4,10 @@
 #include <iostream>
 #include <vector>
 #include "Tile.h"
-#include "Bullet.h"
+#include "Ball.h"
 
 class Tile;
-class Bullet;
+class Ball;
 
 class Game
 {
@@ -23,9 +23,9 @@ private:
     
     sf::VertexArray direction;
     sf::Vertex point;
-    //Bullet
+    //Ball
     float speed;
-    std::vector<Bullet*> bullets;
+    std::vector<Ball*> balls;
     Tile *tile;
 
     sf::Clock dtClock;
@@ -40,7 +40,7 @@ private:
     void initWindow();
     void initHorizonLine();
     void initDirection();
-    void initBullet();
+    void initBall();
     
     //to be continue
     void initTile();

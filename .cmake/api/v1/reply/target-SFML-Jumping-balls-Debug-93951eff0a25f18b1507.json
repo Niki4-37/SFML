@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/SFML_project"
+			"path" : "bin/SFML-Jumping-balls"
 		}
 	],
 	"backtrace" : 1,
@@ -27,13 +27,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 28,
+				"line" : 23,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 29,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -71,7 +71,7 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/home/vladimir/C++ projects/SFML_project/./include"
+					"path" : "/run/media/vladimir/\u041d\u043e\u0432\u044b\u0439 \u0442\u043e\u043c/C++/SFML-Jumping-balls/./include"
 				}
 			],
 			"language" : "CXX",
@@ -92,7 +92,7 @@
 			]
 		}
 	],
-	"id" : "SFML_project::@6890427a1f51a3e7e1df",
+	"id" : "SFML-Jumping-balls::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "SFML_project",
-	"nameOnDisk" : "SFML_project",
+	"name" : "SFML-Jumping-balls",
+	"nameOnDisk" : "SFML-Jumping-balls",
 	"paths" : 
 	{
 		"build" : ".",

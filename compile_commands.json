@@ -1,22 +1,22 @@
 [
 {
-  "directory": "/home/vladimir/C++ projects/SFML_project",
-  "command": "/usr/bin/c++ -I\"/home/vladimir/C++ projects/SFML_project/./include\" -g -Wall -ggdb -o CMakeFiles/SFML_project.dir/src/Bullet.cpp.o -c \"/home/vladimir/C++ projects/SFML_project/src/Bullet.cpp\"",
-  "file": "/home/vladimir/C++ projects/SFML_project/src/Bullet.cpp"
+  "directory": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls",
+  "command": "/usr/bin/c++ -I\"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include\" -g -Wall -ggdb -o CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o -c \"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Bullet.cpp\"",
+  "file": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Bullet.cpp"
 },
 {
-  "directory": "/home/vladimir/C++ projects/SFML_project",
-  "command": "/usr/bin/c++ -I\"/home/vladimir/C++ projects/SFML_project/./include\" -g -Wall -ggdb -o CMakeFiles/SFML_project.dir/src/Game.cpp.o -c \"/home/vladimir/C++ projects/SFML_project/src/Game.cpp\"",
-  "file": "/home/vladimir/C++ projects/SFML_project/src/Game.cpp"
+  "directory": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls",
+  "command": "/usr/bin/c++ -I\"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include\" -g -Wall -ggdb -o CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o -c \"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Game.cpp\"",
+  "file": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Game.cpp"
 },
 {
-  "directory": "/home/vladimir/C++ projects/SFML_project",
-  "command": "/usr/bin/c++ -I\"/home/vladimir/C++ projects/SFML_project/./include\" -g -Wall -ggdb -o CMakeFiles/SFML_project.dir/src/Tile.cpp.o -c \"/home/vladimir/C++ projects/SFML_project/src/Tile.cpp\"",
-  "file": "/home/vladimir/C++ projects/SFML_project/src/Tile.cpp"
+  "directory": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls",
+  "command": "/usr/bin/c++ -I\"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include\" -g -Wall -ggdb -o CMakeFiles/SFML-Jumping-balls.dir/src/Tile.cpp.o -c \"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Tile.cpp\"",
+  "file": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Tile.cpp"
 },
 {
-  "directory": "/home/vladimir/C++ projects/SFML_project",
-  "command": "/usr/bin/c++ -I\"/home/vladimir/C++ projects/SFML_project/./include\" -g -Wall -ggdb -o CMakeFiles/SFML_project.dir/src/main.cpp.o -c \"/home/vladimir/C++ projects/SFML_project/src/main.cpp\"",
-  "file": "/home/vladimir/C++ projects/SFML_project/src/main.cpp"
+  "directory": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls",
+  "command": "/usr/bin/c++ -I\"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include\" -g -Wall -ggdb -o CMakeFiles/SFML-Jumping-balls.dir/src/main.cpp.o -c \"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/main.cpp\"",
+  "file": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/main.cpp"
 }
 ]

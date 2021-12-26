@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/vladimir/C++ projects/SFML_project"
+			"value" : "/run/media/vladimir/\u041d\u043e\u0432\u044b\u0439 \u0442\u043e\u043c/C++/SFML-Jumping-balls"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/vladimir/C++ projects/SFML_project"
+			"value" : "/run/media/vladimir/\u041d\u043e\u0432\u044b\u0439 \u0442\u043e\u043c/C++/SFML-Jumping-balls/"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -831,7 +831,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "SFML_project"
+			"value" : "SFML-Jumping-balls"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1114,6 +1114,42 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "SFML-Jumping-balls_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/run/media/vladimir/\u041d\u043e\u0432\u044b\u0439 \u0442\u043e\u043c/C++/SFML-Jumping-balls"
+		},
+		{
+			"name" : "SFML-Jumping-balls_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "SFML-Jumping-balls_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/run/media/vladimir/\u041d\u043e\u0432\u044b\u0439 \u0442\u043e\u043c/C++/SFML-Jumping-balls"
+		},
+		{
 			"name" : "SFML_DIR",
 			"properties" : 
 			[
@@ -1147,7 +1183,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/vladimir/C++ projects/SFML_project"
+			"value" : "/run/media/vladimir/\u041d\u043e\u0432\u044b\u0439 \u0442\u043e\u043c/C++/SFML-Jumping-balls/"
 		},
 		{
 			"name" : "SFML_project_IS_TOP_LEVEL",
@@ -1171,7 +1207,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/vladimir/C++ projects/SFML_project"
+			"value" : "/run/media/vladimir/\u041d\u043e\u0432\u044b\u0439 \u0442\u043e\u043c/C++/SFML-Jumping-balls/"
 		}
 	],
 	"kind" : "cache",

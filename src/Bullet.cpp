@@ -1,6 +1,6 @@
-#include "Bullet.h"
+#include "Ball.h"
 
-Bullet::Bullet(const sf::Vector2f start_position, float speed)
+Ball::Ball(const sf::Vector2f start_position, float speed)
     : startPosition(start_position),
       speed(speed)
 {
@@ -17,43 +17,44 @@ Bullet::Bullet(const sf::Vector2f start_position, float speed)
     this->boundTouched = false;
 }
 
-Bullet::~Bullet()
+Ball::~Ball()
 {
 
 }
 
-const sf::FloatRect Bullet::getBounds() const
+const sf::FloatRect Ball::getBounds() const
 {
     return this->shape.getGlobalBounds();
 }
 
-bool Bullet::atStatrPosition()
+bool Ball::atStatrPosition()
 {
     return this->shape.getPosition() == this->startPosition;
 }
 
-sf::Vector2f Bullet::getPosition() const
+sf::Vector2f Ball::getPosition() const
 {
     return this->shape.getPosition();
 }
 
-bool Bullet::checkFire() const
+bool Ball::checkFire() const
 {
     return this->isFired;
 }
 
-void Bullet::setAngle(const float &angle)
+void Ball::setAngle(const float &angle)
 {
     this->angle = angle;
 }
 
-void Bullet::makeFire()
+void Ball::makeFire()
 {
     this->isFired = true;
 }
 
-void Bullet::checkWindowCollision(sf::RenderTarget *window)
+void Ball::checkWindowCollision(sf::RenderTarget *window)
 {
+    //Bottom collision
     if (this->shape.getGlobalBounds().top + this->shape.getGlobalBounds().height > window->getSize().y && !this->boundTouched)
     {
         this->boundTouched = true;
@@ -71,18 +72,18 @@ void Bullet::checkWindowCollision(sf::RenderTarget *window)
 
         if (this->angle > - 3.14f && this->angle < -0.01f)
             this->angle *= -1.f;
-        // if (this->angle < - 3.14f / 2 && this->angle > - 3.14f)
-        //     this->angle *= -1.f;
-        // if (this->angle > - 3.14f / 2 && this->angle < -0.01f)
-        //     this->angle *= -1.f;
+
     }
     //Right side collision
     if (this->shape.getGlobalBounds().left + this->shape.getGlobalBounds().width > window->getSize().x && !this->boundTouched)
     {
         this->boundTouched = true;
         this->shape.setPosition(window->getSize().x - this->shape.getGlobalBounds().width - 1.f, this->shape.getPosition().y);
-        //this->angle -= 3.14f;
+        //rotate ball direction by 180 degrees
         this->angle += 3.14f;
+        //set positive value of sin(angle) if this ball upper motion
+        if (this->offsetY < - 0.01f)
+            this->angle *= -1.f;
     }
     //Left side collision 
     else if (this->shape.getGlobalBounds().left < 0.f && !this->boundTouched)
@@ -90,22 +91,24 @@ void Bullet::checkWindowCollision(sf::RenderTarget *window)
         this->boundTouched = true;
         this->shape.setPosition(1.f, this->shape.getPosition().y);
         this->angle += 3.14f;
+        if (this->offsetY < - 0.01f)
+            this->angle *= -1.f;
     }
 
     if (this->boundTouched)
     {
         this->boundTouched = false;
-        // reset "gravity" value makes positive offsetY after collision 
+        // reset "gravity" value, makes positive offsetY after collision 
         this->gravity = 0.f;
         this->speed *= 0.8f;
         
-        std::cout << "speed: " << this->speed  << " angle: " << this->angle * 180 / 3.14 
-        << " offsetX: " << this->offsetX << "\n";
+        std::cout << "speed: " << this->speed  << "   angle:" << this->angle * 180 / 3.14 
+        << "   offsetX: " << this->offsetX << "   offsetY: " << this->offsetY << "\n" ;
     }
 
 }
 
-void Bullet::update(const float &dt)
+void Ball::update(const float &dt)
 {
     if (this->timer >= this->timerMax)
     {
@@ -127,7 +130,7 @@ void Bullet::update(const float &dt)
     this->timer += dt;
 }
 
-void Bullet::render(sf::RenderTarget *target)
+void Ball::render(sf::RenderTarget *target)
 {
     target->draw(this->shape);
 }

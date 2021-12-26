@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: SFML_project
+# Project: SFML-Jumping-balls
 # Configurations: Debug
 # =============================================================================
 
@@ -39,67 +39,67 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/vladimir/C++$ projects/SFML_project/
+cmake_ninja_workdir = /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/
 # =============================================================================
-# Object build statements for EXECUTABLE target SFML_project
+# Object build statements for EXECUTABLE target SFML-Jumping-balls
 
 
 #############################################
-# Order-only phony target for SFML_project
+# Order-only phony target for SFML-Jumping-balls
 
-build cmake_object_order_depends_target_SFML_project: phony || CMakeFiles/SFML_project.dir
+build cmake_object_order_depends_target_SFML-Jumping-balls: phony || CMakeFiles/SFML-Jumping-balls.dir
 
-build CMakeFiles/SFML_project.dir/src/Bullet.cpp.o: CXX_COMPILER__SFML_project_Debug /home/vladimir/C++$ projects/SFML_project/src/Bullet.cpp || cmake_object_order_depends_target_SFML_project
-  DEP_FILE = CMakeFiles/SFML_project.dir/src/Bullet.cpp.o.d
+build CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o: CXX_COMPILER__SFML-Jumping-balls_Debug /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/src/Bullet.cpp || cmake_object_order_depends_target_SFML-Jumping-balls
+  DEP_FILE = CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o.d
   FLAGS = -g -Wall -ggdb
-  INCLUDES = -I"/home/vladimir/C++ projects/SFML_project/./include"
-  OBJECT_DIR = CMakeFiles/SFML_project.dir
-  OBJECT_FILE_DIR = CMakeFiles/SFML_project.dir/src
+  INCLUDES = -I"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include"
+  OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir
+  OBJECT_FILE_DIR = CMakeFiles/SFML-Jumping-balls.dir/src
 
-build CMakeFiles/SFML_project.dir/src/Game.cpp.o: CXX_COMPILER__SFML_project_Debug /home/vladimir/C++$ projects/SFML_project/src/Game.cpp || cmake_object_order_depends_target_SFML_project
-  DEP_FILE = CMakeFiles/SFML_project.dir/src/Game.cpp.o.d
+build CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o: CXX_COMPILER__SFML-Jumping-balls_Debug /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/src/Game.cpp || cmake_object_order_depends_target_SFML-Jumping-balls
+  DEP_FILE = CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o.d
   FLAGS = -g -Wall -ggdb
-  INCLUDES = -I"/home/vladimir/C++ projects/SFML_project/./include"
-  OBJECT_DIR = CMakeFiles/SFML_project.dir
-  OBJECT_FILE_DIR = CMakeFiles/SFML_project.dir/src
+  INCLUDES = -I"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include"
+  OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir
+  OBJECT_FILE_DIR = CMakeFiles/SFML-Jumping-balls.dir/src
 
-build CMakeFiles/SFML_project.dir/src/Tile.cpp.o: CXX_COMPILER__SFML_project_Debug /home/vladimir/C++$ projects/SFML_project/src/Tile.cpp || cmake_object_order_depends_target_SFML_project
-  DEP_FILE = CMakeFiles/SFML_project.dir/src/Tile.cpp.o.d
+build CMakeFiles/SFML-Jumping-balls.dir/src/Tile.cpp.o: CXX_COMPILER__SFML-Jumping-balls_Debug /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/src/Tile.cpp || cmake_object_order_depends_target_SFML-Jumping-balls
+  DEP_FILE = CMakeFiles/SFML-Jumping-balls.dir/src/Tile.cpp.o.d
   FLAGS = -g -Wall -ggdb
-  INCLUDES = -I"/home/vladimir/C++ projects/SFML_project/./include"
-  OBJECT_DIR = CMakeFiles/SFML_project.dir
-  OBJECT_FILE_DIR = CMakeFiles/SFML_project.dir/src
+  INCLUDES = -I"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include"
+  OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir
+  OBJECT_FILE_DIR = CMakeFiles/SFML-Jumping-balls.dir/src
 
-build CMakeFiles/SFML_project.dir/src/main.cpp.o: CXX_COMPILER__SFML_project_Debug /home/vladimir/C++$ projects/SFML_project/src/main.cpp || cmake_object_order_depends_target_SFML_project
-  DEP_FILE = CMakeFiles/SFML_project.dir/src/main.cpp.o.d
+build CMakeFiles/SFML-Jumping-balls.dir/src/main.cpp.o: CXX_COMPILER__SFML-Jumping-balls_Debug /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/src/main.cpp || cmake_object_order_depends_target_SFML-Jumping-balls
+  DEP_FILE = CMakeFiles/SFML-Jumping-balls.dir/src/main.cpp.o.d
   FLAGS = -g -Wall -ggdb
-  INCLUDES = -I"/home/vladimir/C++ projects/SFML_project/./include"
-  OBJECT_DIR = CMakeFiles/SFML_project.dir
-  OBJECT_FILE_DIR = CMakeFiles/SFML_project.dir/src
+  INCLUDES = -I"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include"
+  OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir
+  OBJECT_FILE_DIR = CMakeFiles/SFML-Jumping-balls.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target SFML_project
+# Link build statements for EXECUTABLE target SFML-Jumping-balls
 
 
 #############################################
-# Link the executable bin/SFML_project
+# Link the executable bin/SFML-Jumping-balls
 
-build bin/SFML_project: CXX_EXECUTABLE_LINKER__SFML_project_Debug CMakeFiles/SFML_project.dir/src/Bullet.cpp.o CMakeFiles/SFML_project.dir/src/Game.cpp.o CMakeFiles/SFML_project.dir/src/Tile.cpp.o CMakeFiles/SFML_project.dir/src/main.cpp.o | /usr/lib/libsfml-audio.so.2.5.1 /usr/lib/libsfml-graphics.so.2.5.1 /usr/lib/libsfml-window.so.2.5.1 /usr/lib/libsfml-system.so.2.5.1
+build bin/SFML-Jumping-balls: CXX_EXECUTABLE_LINKER__SFML-Jumping-balls_Debug CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/Tile.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/main.cpp.o | /usr/lib/libsfml-audio.so.2.5.1 /usr/lib/libsfml-graphics.so.2.5.1 /usr/lib/libsfml-window.so.2.5.1 /usr/lib/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libsfml-audio.so.2.5.1  /usr/lib/libsfml-graphics.so.2.5.1  /usr/lib/libsfml-window.so.2.5.1  /usr/lib/libsfml-system.so.2.5.1
-  OBJECT_DIR = CMakeFiles/SFML_project.dir
+  OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = bin/SFML_project
-  TARGET_PDB = SFML_project.dbg
+  TARGET_FILE = bin/SFML-Jumping-balls
+  TARGET_PDB = SFML-Jumping-balls.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/vladimir/C++ projects/SFML_project" && /usr/bin/ccmake -S"/home/vladimir/C++ projects/SFML_project" -B"/home/vladimir/C++ projects/SFML_project"
+  COMMAND = cd "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls" && /usr/bin/ccmake -S"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls" -B"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -111,7 +111,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/vladimir/C++ projects/SFML_project" && /usr/bin/cmake --regenerate-during-build -S"/home/vladimir/C++ projects/SFML_project" -B"/home/vladimir/C++ projects/SFML_project"
+  COMMAND = cd "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls" && /usr/bin/cmake --regenerate-during-build -S"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls" -B"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -121,7 +121,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build SFML_project: phony bin/SFML_project
+build SFML-Jumping-balls: phony bin/SFML-Jumping-balls
 
 # =============================================================================
 # Folder targets.
@@ -129,9 +129,9 @@ build SFML_project: phony bin/SFML_project
 # =============================================================================
 
 #############################################
-# Folder: /home/vladimir/C++ projects/SFML_project
+# Folder: /run/media/vladimir/Новый том/C++/SFML-Jumping-balls
 
-build all: phony bin/SFML_project
+build all: phony bin/SFML-Jumping-balls
 
 # =============================================================================
 # Built-in targets
