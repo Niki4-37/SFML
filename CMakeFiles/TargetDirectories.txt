@@ -1,0 +1,3 @@
+/home/vladimir/C++ projects/SFML_project/CMakeFiles/SFML_project.dir
+/home/vladimir/C++ projects/SFML_project/CMakeFiles/edit_cache.dir
+/home/vladimir/C++ projects/SFML_project/CMakeFiles/rebuild_cache.dir
