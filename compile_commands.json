@@ -1,13 +1,18 @@
 [
 {
   "directory": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls",
-  "command": "/usr/bin/c++ -I\"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include\" -g -Wall -ggdb -o CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o -c \"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Bullet.cpp\"",
-  "file": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Bullet.cpp"
+  "command": "/usr/bin/c++ -I\"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include\" -g -Wall -ggdb -o CMakeFiles/SFML-Jumping-balls.dir/src/Ball.cpp.o -c \"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Ball.cpp\"",
+  "file": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Ball.cpp"
 },
 {
   "directory": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls",
   "command": "/usr/bin/c++ -I\"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include\" -g -Wall -ggdb -o CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o -c \"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Game.cpp\"",
   "file": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Game.cpp"
+},
+{
+  "directory": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls",
+  "command": "/usr/bin/c++ -I\"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include\" -g -Wall -ggdb -o CMakeFiles/SFML-Jumping-balls.dir/src/Splash.cpp.o -c \"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Splash.cpp\"",
+  "file": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/src/Splash.cpp"
 },
 {
   "directory": "/run/media/vladimir/Новый том/C++/SFML-Jumping-balls",

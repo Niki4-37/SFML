@@ -49,8 +49,8 @@ cmake_ninja_workdir = /run/media/vladimir/Новый$ том/C++/SFML-Jumping-ba
 
 build cmake_object_order_depends_target_SFML-Jumping-balls: phony || CMakeFiles/SFML-Jumping-balls.dir
 
-build CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o: CXX_COMPILER__SFML-Jumping-balls_Debug /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/src/Bullet.cpp || cmake_object_order_depends_target_SFML-Jumping-balls
-  DEP_FILE = CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o.d
+build CMakeFiles/SFML-Jumping-balls.dir/src/Ball.cpp.o: CXX_COMPILER__SFML-Jumping-balls_Debug /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/src/Ball.cpp || cmake_object_order_depends_target_SFML-Jumping-balls
+  DEP_FILE = CMakeFiles/SFML-Jumping-balls.dir/src/Ball.cpp.o.d
   FLAGS = -g -Wall -ggdb
   INCLUDES = -I"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include"
   OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir
@@ -58,6 +58,13 @@ build CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o: CXX_COMPILER__SFML-Jum
 
 build CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o: CXX_COMPILER__SFML-Jumping-balls_Debug /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/src/Game.cpp || cmake_object_order_depends_target_SFML-Jumping-balls
   DEP_FILE = CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o.d
+  FLAGS = -g -Wall -ggdb
+  INCLUDES = -I"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include"
+  OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir
+  OBJECT_FILE_DIR = CMakeFiles/SFML-Jumping-balls.dir/src
+
+build CMakeFiles/SFML-Jumping-balls.dir/src/Splash.cpp.o: CXX_COMPILER__SFML-Jumping-balls_Debug /run/media/vladimir/Новый$ том/C++/SFML-Jumping-balls/src/Splash.cpp || cmake_object_order_depends_target_SFML-Jumping-balls
+  DEP_FILE = CMakeFiles/SFML-Jumping-balls.dir/src/Splash.cpp.o.d
   FLAGS = -g -Wall -ggdb
   INCLUDES = -I"/run/media/vladimir/Новый том/C++/SFML-Jumping-balls/./include"
   OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir
@@ -85,7 +92,7 @@ build CMakeFiles/SFML-Jumping-balls.dir/src/main.cpp.o: CXX_COMPILER__SFML-Jumpi
 #############################################
 # Link the executable bin/SFML-Jumping-balls
 
-build bin/SFML-Jumping-balls: CXX_EXECUTABLE_LINKER__SFML-Jumping-balls_Debug CMakeFiles/SFML-Jumping-balls.dir/src/Bullet.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/Tile.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/main.cpp.o | /usr/lib/libsfml-audio.so.2.5.1 /usr/lib/libsfml-graphics.so.2.5.1 /usr/lib/libsfml-window.so.2.5.1 /usr/lib/libsfml-system.so.2.5.1
+build bin/SFML-Jumping-balls: CXX_EXECUTABLE_LINKER__SFML-Jumping-balls_Debug CMakeFiles/SFML-Jumping-balls.dir/src/Ball.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/Game.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/Splash.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/Tile.cpp.o CMakeFiles/SFML-Jumping-balls.dir/src/main.cpp.o | /usr/lib/libsfml-audio.so.2.5.1 /usr/lib/libsfml-graphics.so.2.5.1 /usr/lib/libsfml-window.so.2.5.1 /usr/lib/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libsfml-audio.so.2.5.1  /usr/lib/libsfml-graphics.so.2.5.1  /usr/lib/libsfml-window.so.2.5.1  /usr/lib/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/SFML-Jumping-balls.dir

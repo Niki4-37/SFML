@@ -42,7 +42,7 @@ void Game::initDirection()
 
 void Game::initBall()
 {
-    this->balls.push_back(new Ball(this->startPosition, this->speed));  //, this->angle
+    this->balls.push_back(new Ball(this->startPosition, this->speed));
 }
 
 //it should be a vector
@@ -63,7 +63,6 @@ Game::Game()
     this->initDirection();
     this->initBall();
     this->initTile();
-
 }
 
 Game::~Game()
@@ -74,7 +73,6 @@ Game::~Game()
         delete ball;
 
     delete this->tile;
-
 }
 
 void Game::run()
@@ -145,6 +143,8 @@ void Game::updateInput()
                     ball->setAngle(this->getAngle(this->mousePosVeiw));
                     ball->makeFire();
             }
+
+            //this->blowJet = new Jet(200, this->getAngle(this->mousePosVeiw));
         }
     }
     else
@@ -190,8 +190,7 @@ void Game::update()
         if (ball->checkFire())
             ball->update(this->dt);
     this->updateQuantity();
-
-
+    //this->blowJet->update(dt);
 }
 
 void Game::render()
@@ -206,6 +205,8 @@ void Game::render()
     
     for (auto &ball : this->balls)
         ball->render(this->window);
+
+    //this->window->draw(*this->blowJet);
 
     this->window->display();
 }

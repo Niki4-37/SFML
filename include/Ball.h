@@ -1,10 +1,11 @@
 #ifndef BALL_H
 #define BALL_H
 
-#include <iostream>
-#include <cmath> //in this case - trigonometry
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
+//#include <cmath> //in this case - trigonometry
+
+#include "Splash.h"
+
+class Splash;
 
 class Ball
 {
@@ -16,11 +17,12 @@ float timer;
 sf::CircleShape shape;
 float speed;
 float angle;
-float offsetX;
-float offsetY;
+sf::Vector2f velocity;
 float gravity;
 bool isFired;
 bool boundTouched;
+
+std::vector<Splash*> splashes;
 
 //Private functions
    

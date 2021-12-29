@@ -35,6 +35,10 @@ private:
     sf::Vector2f mousePosVeiw;
 
     bool mouseHeld;
+    
+    //std::vector<Jet*> blowJets;
+    //Jet *blowJet;
+    
     //Private functions
     void initVariables();
     void initWindow();
