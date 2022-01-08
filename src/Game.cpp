@@ -137,8 +137,11 @@ void Game::updateInput()
             for (auto &ball : this->balls)
             {
                 if (ball->atStatrPosition())
+                {
                     ball->setAngle(this->getAngle(this->mousePosVeiw));
+                    //check ball condition
                     ball->makeFire();
+                }
             }
         }
     }
