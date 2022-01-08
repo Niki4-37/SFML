@@ -122,9 +122,6 @@ void Game::updateDirection()
 void Game::updateTimer()
 {
     this->dt = this->dtClock.restart().asSeconds();
-    ////Debugging/////////////////////////
-    // std::cout << this->dt << "\n";   //
-    //////////////////////////////////////
 }
 
 void Game::updateInput()
@@ -143,8 +140,6 @@ void Game::updateInput()
                     ball->setAngle(this->getAngle(this->mousePosVeiw));
                     ball->makeFire();
             }
-
-            //this->blowJet = new Jet(200, this->getAngle(this->mousePosVeiw));
         }
     }
     else
@@ -168,7 +163,7 @@ void Game::updateQuantity()
         this->balls.back()->getBounds().height)
     {
         //add new ball if it's empty 
-        this->balls.push_back(new Ball(this->startPosition, this->speed));  //, this->angle
+        this->balls.push_back(new Ball(this->startPosition, this->speed));
     }
     //check quantity
     if (this->balls.size() > 11)
@@ -190,7 +185,6 @@ void Game::update()
         if (ball->checkFire())
             ball->update(this->dt);
     this->updateQuantity();
-    //this->blowJet->update(dt);
 }
 
 void Game::render()
@@ -205,8 +199,6 @@ void Game::render()
     
     for (auto &ball : this->balls)
         ball->render(this->window);
-
-    //this->window->draw(*this->blowJet);
 
     this->window->display();
 }
